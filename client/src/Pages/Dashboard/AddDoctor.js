@@ -36,8 +36,8 @@ const AddDoctor = () => {
 
 		fetch(' https://emedicnyk.herokuapp.com/addADoctor', {
 			method: 'POST',
-			body: formData
-		})
+			"Accept": "application/json; odata=verbose",
+			})
 			.then((response) => response.json())
 			.then((data) => {
 				console.log(data);
