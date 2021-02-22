@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import '../Doctors/Doctors.css';
 
 const Doctor = ({ doctorsData }) => {
-	const { img, category, name, education, designation, department, hospital } = doctorsData;
+	const { img, category, name, education, designation, department, hospital } = props.doctors;
 	const [ descriptionCollapse, setDescriptionCollapse ] = useState(false);
 
 	const showMore = () => {
