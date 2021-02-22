@@ -5,13 +5,12 @@ import 'swiper/swiper-bundle.min.css';
 import { DataContext } from '../../App';
 import Doctor from '../Doctor/Doctor';
 import './Doctors.css';
-import doctors from '../../Data/doctors';
 
 SwiperCore.use([ Navigation, Pagination, Scrollbar, A11y, Autoplay, Virtual ]);
 
 const Doctors = () => {
 
-    const doctorsData = doctors;
+    const doctorsData = useContext(DataContext)
     
     return (
         <section className="doctors">
